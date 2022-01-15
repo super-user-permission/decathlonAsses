@@ -1,0 +1,34 @@
+{
+    "items":[
+        {
+            "itemName": "Hockey",
+            "description": "Some quick example text to build on the card title and make up the bulk",
+            "price": 800
+        },
+        {
+            "itemName": "Bat",
+            "description": "Some quick example text to build on the card title and make up the bulk",
+            "price": 1200
+        },
+        {
+            "itemName": "football",
+            "description": "Some quick example text to build on the card title and make up the bulk",
+            "price": 550
+        },
+        {
+            "itemName": "gloves",
+            "description": "Some quick example text to build on the card title and make up the bulk",
+            "price": 350
+        },
+        {
+            "itemName": "dumbbell",
+            "description": "Some quick example text to build on the card title and make up the bulk",
+            "price": 900
+        },
+        {
+            "itemName": "Smith Machine",
+            "description": "Some quick example text to build on the card title and make up the bulk",
+            "price": 12000
+        }
+    ]
+}
