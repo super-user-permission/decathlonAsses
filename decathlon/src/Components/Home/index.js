@@ -31,6 +31,10 @@ export default function Home() {
         navigate("../cart", { replace: true })
     }
 
+    const onClickLogin = () => {
+        navigate("../", { replace: true })
+    }
+
     return (
         <div className='container'>
 
@@ -39,7 +43,7 @@ export default function Home() {
             </div>
             <Row className='cartImg text-center'>
                 <Col md={5} className='my-auto'>
-                    <span> {myStatus == 'GUEST' ? 'Login' : 'My Account'} </span>
+                    <span> {myStatus == 'GUEST' ? <div onClick={() => onClickLogin()}>{'Login'}</div> : 'My Account'} </span>
                 </Col>
                 <Col md={3}>
                     <img src={profile} width={'40px'} height={'40px'} />

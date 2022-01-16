@@ -1,6 +1,8 @@
+import { ADDTOCART, EMPTYCART } from "../actions/actionTypes";
+
 const addItems = (state = [], action) => {
     switch (action.type) {
-        case 'ADDTOCART':
+        case ADDTOCART:
             let newState = state;
             if (!newState.length) {
                 newState.push(action.payload)
@@ -12,7 +14,7 @@ const addItems = (state = [], action) => {
                 }
             }
             return newState;
-        case 'EMPTYCART':
+        case EMPTYCART:
             let cart = [];
             return cart;
         default:
