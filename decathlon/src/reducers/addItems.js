@@ -11,8 +11,10 @@ const addItems = (state = [], action) => {
                     newState.push(action.payload)
                 }
             }
-            console.log(newState)
             return newState;
+        case 'EMPTYCART':
+            let cart = [];
+            return cart;
         default:
             return state;
     }

@@ -18,7 +18,6 @@ export default function Login() {
 
     const onClickLogin = () => {
         if (cred.username == user && cred.password == pass) {
-            console.log("Correct");
             dispatch(userLogin());
             navigate("../home", { replace: true })
         } else {
@@ -26,12 +25,10 @@ export default function Login() {
         }
     }
 
-    console.log(user, pass)
-
     return (
         <div className='containerBox'>
             <div className='imgBox'>
-                <img src={logo} />
+                <img src={logo} className='img1' />
             </div>
             <div className='loginContainer'>
                 <Form>

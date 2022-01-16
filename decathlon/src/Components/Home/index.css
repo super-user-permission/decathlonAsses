@@ -11,9 +11,9 @@
 
 .cartImg{
     position: absolute;
-    width: 100px;
+    /* width: 100px; */
     top: 10%;
-    right: 50px;
+    right: 90px;
 }
 
 .cartItem{

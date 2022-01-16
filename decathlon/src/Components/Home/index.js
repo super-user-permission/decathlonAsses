@@ -7,24 +7,23 @@ import cartLogo from '../../img/shoppingCart.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import { addToCart } from '../../actions/action';
+import profile from '../../img/profile.png';
 
 export default function Home() {
 
     const myStatus = useSelector(state => state.userStatus);
     const myItems = useSelector(state => state.addItems);
-    const [items, setItems] = useState(0)
+    const [items, setItems] = useState(0);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (myStatus == 'GUEST') {
-            navigate("../", { replace: true })
-        }
+        setItems(myItems.length)
     }, [])
 
     const onClickAdd = (item, val) => {
-        dispatch(addToCart({ item, val }));
-        console.log(myItems);
+        let qty = 1
+        dispatch(addToCart({ item, val, qty }));
         setItems(myItems.length);
     }
 
@@ -32,14 +31,26 @@ export default function Home() {
         navigate("../cart", { replace: true })
     }
 
-    console.log(myItems);
-
     return (
         <div className='container'>
 
             <div className='headerLogo'>
-                <img src={logo} />
+                <img src={logo} className='img1' />
             </div>
+            <Row className='cartImg text-center'>
+                <Col md={5} className='my-auto'>
+                    <span> {myStatus == 'GUEST' ? 'Login' : 'My Account'} </span>
+                </Col>
+                <Col md={3}>
+                    <img src={profile} width={'40px'} height={'40px'} />
+                </Col>
+                <Col md={2} >
+                    <img src={cartLogo} width={'35px'} height={'35px'} onClick={() => onClickCart()} />
+                </Col>
+                <Col md={1} className='my-auto'>
+                    <span className='cartItem'>{items}</span>
+                </Col>
+            </Row>
 
             <Row xs={1} md={3} className="g-4">
                 {Items.items.map((val, i) =>
@@ -66,10 +77,6 @@ export default function Home() {
                     </Col>
                 )}
             </Row>
-            <div className='cartImg' onClick={() => onClickCart()} >
-                <img src={cartLogo} />
-                <span className='cartItem'>{items}</span>
-            </div>
 
         </div>
     )

@@ -2,32 +2,32 @@
     "items":[
         {
             "itemName": "Hockey",
-            "description": "Some quick example text to build on the card title and make up the bulk",
+            "description": "Wood - basic field hockey sticks, and mostly for children as they begin are made out of wood...",
             "price": 800
         },
         {
             "itemName": "Bat",
-            "description": "Some quick example text to build on the card title and make up the bulk",
+            "description": "Wood - basic field wooden bat, and mostly for children as they begin are made out of wood...",
             "price": 1200
         },
         {
-            "itemName": "football",
-            "description": "Some quick example text to build on the card title and make up the bulk",
+            "itemName": "Football",
+            "description": "Nivia Sports is an Indian sports equipment manufacturer under the banner of FreeWill Sports Pvt Ltd...",
             "price": 550
         },
         {
-            "itemName": "gloves",
-            "description": "Some quick example text to build on the card title and make up the bulk",
+            "itemName": "Gloves",
+            "description": "Best Fleece Mountain Synthetic Gloves for Men & Women at affordable prices...",
             "price": 350
         },
         {
-            "itemName": "dumbbell",
-            "description": "Some quick example text to build on the card title and make up the bulk",
+            "itemName": "Dumbbell",
+            "description": "FratiiSingh's Hex Shape PVC Dumbbells Set of 5 Kg{Pack of 2} for Unisex...",
             "price": 900
         },
         {
             "itemName": "Smith Machine",
-            "description": "Some quick example text to build on the card title and make up the bulk",
+            "description": "Fitness Life Commercial Smith Machine with Counter Balance is your go to product...",
             "price": 12000
         }
     ]

@@ -16,3 +16,16 @@ export const addToCart = (val) => {
         payload: val
     }
 }
+
+export const saveCart = (val) => {
+    return {
+        type: 'SAVECART',
+        payload: val
+    }
+}
+
+export const emptyCart = () => {
+    return {
+        type: 'EMPTYCART'
+    }
+}
